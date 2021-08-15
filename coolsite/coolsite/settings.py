@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'captcha',
     'women.apps.WomenConfig'
 ]
 
@@ -138,7 +139,7 @@ INTERNAL_IPS = [
 ]
 
 DEBUG_TOOLBAR_CONFIG = {
-    'SHOW_TOOLBAR_CALLBACK': lambda r: True,
+    'SHOW_TOOLBAR_CALLBACK': lambda r: False,
 }
 
 CACHES = {
