@@ -6,11 +6,11 @@ class FirstMiddleware:
         self._get_response = get_response
 
     def __call__(self, request):
-        print("BEFORE 11111 MIDDLEWARE")
+        # print("BEFORE 11111 MIDDLEWARE")
         response = self._get_response(request)
-        print("AFTER 11111 MIDDLEWARE")
+        # print("AFTER 11111 MIDDLEWARE")
         return response
 
-    def process_exception(self, request, exception):
-        print(f"Exeption is:{exception}")
-        return HttpResponse('Exception!')
+    # def process_exception(self, request, exception):
+    #     print(f"Exeption is:{exception}")
+    #     return HttpResponse('Exception!')
